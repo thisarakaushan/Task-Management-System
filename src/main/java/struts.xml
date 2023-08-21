@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+
+	<!--Endpoints for tasks...................................................................................-->
+
+	<!--Get endpoints for tasks-->
+	
+    <package extends="json-default" namespace="/tasks" name="task">
+    	
+        <action name="get-tasks" method="allTasks" 
+        		class="com.highradius.taskmanagement.action.TaskActions">
+            
+            <result name="success" type="json">
+                <param name="">Task Data</param>
+            </result>
+            
+            <result name="error" type="json">
+                <param name="">error.jsp</param>
+            </result>
+        </action>
+
+
+	<!--Insert endpoints for tasks-->
+	
+        <action name="insert-task" method="insertTask" 
+        		class="com.highradius.taskmanagement.action.TaskActions">
+        		
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="added">
+            	<param name="">Task Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <result name="error">error.jsp</result>
+        </action>
+        
+
+	<!--Update endpoints for tasks-->
+
+        <action name="update-task" method="updateTask" 
+        		class="com.highradius.taskmanagement.action.TaskActions">
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="updated">
+            	<param name="">Task Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <result  name="error">error.jsp</result>
+        </action>
+        
+
+	<!--Delete endpoints for tasks-->
+		
+        <action name="delete-task" method="deleteTask" 
+        		class="com.highradius.taskmanagement.action.TaskActions">
+        		
+            <interceptor-ref name="json">
+                <param name="enableSMD">true</param>
+            </interceptor-ref>
+            
+            <result type="json" name="deleted"> 
+            	<param name="">Task Details</param>
+            </result>
+            
+            <result type="json" name="error"></result>
+            <!-- <result  name="error">error.jsp</result> -->
+        </action>
+        
+    </package>
+    
+</struts>

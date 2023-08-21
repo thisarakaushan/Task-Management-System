@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Task Bean -->
+	<bean id="taskDaoImpl" class="com.highradius.taskmanagement.daoImpl.TaskDaoImpl" />
+
+	<!-- TaskManager Bean -->
+	<bean id="taskManagerImpl" 
+			class="com.highradius.taskmanagement.managerImpl.TaskManagerImpl">
+		<property name="taskDao" ref="taskDaoImpl" />
+	</bean>
+	
+</beans>
