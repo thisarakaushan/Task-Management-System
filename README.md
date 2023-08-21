@@ -2,7 +2,7 @@
 
 This is a simple Task Management web application built using Spring, Struts, Hibernate, and JSON. The application allows users to manage tasks by performing CRUD (Create, Read, Update, Delete) operations on tasks.
 
-## Features
+### Features
   - **View Tasks**: Users can view a list of tasks in JSON format.
   - **Create Tasks**: Users can add new tasks to the list.
   - **Update Tasks**: Users can edit the details of existing tasks.
@@ -39,10 +39,10 @@ The application will be accessible at `http://localhost:8080/task-management-sys
 
 5. Use the application by accessing different URLs:
 
-View Tasks: http://localhost:8080/task-management-system/tasks/get-tasks
-Create Task: http://localhost:8080/task-management-system/tasks/insert-task
-Update Task: http://localhost:8080/task-management-system/tasks/update-task
-Delete Task: http://localhost:8080/task-management-system/tasks/delete-task
+  - View Tasks: `http://localhost:8080/task-management-system/tasks/get-tasks`
+  - Create Task: `http://localhost:8080/task-management-system/tasks/insert-task`
+  - Update Task: `http://localhost:8080/task-management-system/tasks/update-task`
+  - Delete Task: `http://localhost:8080/task-management-system/tasks/delete-task`
 
 6. Project Structure
    
