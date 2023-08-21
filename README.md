@@ -3,7 +3,6 @@
 This is a simple Task Management web application built using Spring, Struts, Hibernate, and JSON. The application allows users to manage tasks by performing CRUD (Create, Read, Update, Delete) operations on tasks.
 
 ## Features
-
   - **View Tasks**: Users can view a list of tasks in JSON format.
   - **Create Tasks**: Users can add new tasks to the list.
   - **Update Tasks**: Users can edit the details of existing tasks.
