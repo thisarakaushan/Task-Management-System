@@ -10,9 +10,9 @@ Update Tasks: Users can edit the details of existing tasks.
 Delete Tasks: Users can remove tasks from the list.
 
 ### Technologies Used
-  - [Spring] Framework
-  - [Struts] Framework
-  - [Hibernate ORM]
+  - [Spring](http://www.java2s.com/example/jar/s/download-springboot153releasejar-file.html) Framework
+  - [Struts](http://www.java2s.com/Code/Jar/s/Downloadstrutscore1310jar.htm#google_vignette) Framework
+  - [Hibernate ORM](https://jar-download.com/download-handling.php)
   - JSON Serialization/Deserialization
   - H2 Database (or your database of choice)
   - Web Dynamic Project
