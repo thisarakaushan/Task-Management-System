@@ -4,10 +4,10 @@ This is a simple Task Management web application built using Spring, Struts, Hib
 
 ## Features
 
-View Tasks: Users can view a list of tasks in JSON format.
-Create Tasks: Users can add new tasks to the list.
-Update Tasks: Users can edit the details of existing tasks.
-Delete Tasks: Users can remove tasks from the list.
+  - **View Tasks**: Users can view a list of tasks in JSON format.
+  - **Create Tasks**: Users can add new tasks to the list.
+  - **Update Tasks**: Users can edit the details of existing tasks.
+  - **Delete Tasks**: Users can remove tasks from the list.
 
 ### Technologies Used
   - [Spring](http://www.java2s.com/example/jar/s/download-springboot153releasejar-file.html) Framework
